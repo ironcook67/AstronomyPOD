@@ -16,11 +16,7 @@ extension APODView {
 
 		var unwrappedAPOD: APOD {
 			if apod == nil {
-				return APOD(date: "2022-08-12",
-							explanation: "What does a black hole look like?",
-							title: "First Horizon-Scale Image of a Black Hole",
-							url: "https://apod.nasa.gov/apod/image/2205/M87bh_EHT_960.jpg",
-							mediaType: "NASA")
+				return MockData.apod
 			} else {
 				return apod!
 			}
