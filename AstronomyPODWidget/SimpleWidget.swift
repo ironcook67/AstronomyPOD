@@ -25,7 +25,7 @@ struct SimpleWidget: Widget {
 		StaticConfiguration(kind: kind, provider: Provider()) { entry in
 			SimpleWidgetEntryView(entry: entry)
 		}
-		.configurationDisplayName("APOD Widget")
+		.configurationDisplayName("Astronomy POD Widget")
 		.description("NASA's Astronomy Picture of the Day.")
 		.supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .systemExtraLarge])
 	}

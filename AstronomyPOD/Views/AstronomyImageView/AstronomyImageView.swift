@@ -8,27 +8,12 @@
 import SwiftUI
 
 struct AstronomyImageView: View {
-	@StateObject var viewModel: ViewModel
 	var apod: APOD
 
-	init(apod: APOD) {
-		self.apod = apod
-		let viewModel = ViewModel(apod: apod)
-		_viewModel = StateObject(wrappedValue: viewModel)
-	}
-
 	var body: some View {
-		Image(uiImage: UIImage(data: viewModel.imageData) ?? PlaceholderImage.square)
+		Image(uiImage: UIImage(data: apod.imageData ?? Data()) ?? PlaceholderImage.square)
 			.resizable()
 			.scaledToFill()
-			.overlay {
-				if viewModel.isLoading {
-					ProgressView()
-				}
-			}
-			.task {
-				await viewModel.fetchImage()
-			}
 	}
 }
 

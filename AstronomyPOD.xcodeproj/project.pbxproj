@@ -21,9 +21,7 @@
 		4D74235828D6E6BA0041D860 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235728D6E6BA0041D860 /* InfoView.swift */; };
 		4D74235B28D6E7020041D860 /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235A28D6E7020041D860 /* APODViewModel.swift */; };
 		4D74235D28D6E7090041D860 /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235C28D6E7090041D860 /* APODView.swift */; };
-		4D74236028D6E74B0041D860 /* APODManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235F28D6E74B0041D860 /* APODManager.swift */; };
 		4D74236328D6F4560041D860 /* AstronomyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74236228D6F4560041D860 /* AstronomyImageView.swift */; };
-		4D74236528D6F4630041D860 /* AstronomyImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74236428D6F4630041D860 /* AstronomyImageViewModel.swift */; };
 		4D74236D28D6F7550041D860 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D74236C28D6F7550041D860 /* WidgetKit.framework */; };
 		4D74236F28D6F7550041D860 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D74236E28D6F7550041D860 /* SwiftUI.framework */; };
 		4D74237428D6F7570041D860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D74237328D6F7570041D860 /* Assets.xcassets */; };
@@ -36,7 +34,6 @@
 		4D74238A28D6F8E50041D860 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235328D6E6560041D860 /* APODModel.swift */; };
 		4D74238B28D6F97D0041D860 /* NASAURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */; };
 		4D74238C28D6F9820041D860 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234E28D6E6150041D860 /* ImageCache.swift */; };
-		4D74238D28D6F9870041D860 /* APODManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235F28D6E74B0041D860 /* APODManager.swift */; };
 		4D74238E28D6F99F0041D860 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74237F28D6F7B50041D860 /* WidgetBundle.swift */; };
 		4D74238F28D6F9A30041D860 /* SimpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74238128D6F7BD0041D860 /* SimpleWidget.swift */; };
 		4D74239028D6F9A60041D860 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74238328D6F7C60041D860 /* DataProvider.swift */; };
@@ -82,9 +79,7 @@
 		4D74235728D6E6BA0041D860 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		4D74235A28D6E7020041D860 /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
 		4D74235C28D6E7090041D860 /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
-		4D74235F28D6E74B0041D860 /* APODManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODManager.swift; sourceTree = "<group>"; };
 		4D74236228D6F4560041D860 /* AstronomyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyImageView.swift; sourceTree = "<group>"; };
-		4D74236428D6F4630041D860 /* AstronomyImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyImageViewModel.swift; sourceTree = "<group>"; };
 		4D74236A28D6F7550041D860 /* AstronomyPODWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AstronomyPODWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D74236C28D6F7550041D860 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4D74236E28D6F7550041D860 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -145,7 +140,6 @@
 				4D74234128D6E4EB0041D860 /* MockData */,
 				4D74234428D6E5620041D860 /* Extensions */,
 				4D74234B28D6E5D10041D860 /* Services */,
-				4D74235E28D6E7370041D860 /* Managers */,
 				4D74235228D6E6460041D860 /* Model */,
 				4D74235528D6E6960041D860 /* Views */,
 				4D74233228D6E4A80041D860 /* AstronomyPODApp.swift */,
@@ -233,18 +227,9 @@
 			path = APODView;
 			sourceTree = "<group>";
 		};
-		4D74235E28D6E7370041D860 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				4D74235F28D6E74B0041D860 /* APODManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		4D74236128D6E8DA0041D860 /* AstronomyImageView */ = {
 			isa = PBXGroup;
 			children = (
-				4D74236428D6F4630041D860 /* AstronomyImageViewModel.swift */,
 				4D74236228D6F4560041D860 /* AstronomyImageView.swift */,
 			);
 			path = AstronomyImageView;
@@ -375,7 +360,6 @@
 				4D74235128D6E62F0041D860 /* NASAURLBuilder.swift in Sources */,
 				4D74235828D6E6BA0041D860 /* InfoView.swift in Sources */,
 				4D74235B28D6E7020041D860 /* APODViewModel.swift in Sources */,
-				4D74236528D6F4630041D860 /* AstronomyImageViewModel.swift in Sources */,
 				4D74234D28D6E5EC0041D860 /* APIService.swift in Sources */,
 				4D74236328D6F4560041D860 /* AstronomyImageView.swift in Sources */,
 				4D74235D28D6E7090041D860 /* APODView.swift in Sources */,
@@ -386,7 +370,6 @@
 				4D74233328D6E4A80041D860 /* AstronomyPODApp.swift in Sources */,
 				4D74234328D6E50A0041D860 /* Constants.swift in Sources */,
 				4D74234628D6E5750041D860 /* Date+Ext.swift in Sources */,
-				4D74236028D6E74B0041D860 /* APODManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +385,6 @@
 				4D74238528D6F8CA0041D860 /* Constants.swift in Sources */,
 				4D74239028D6F9A60041D860 /* DataProvider.swift in Sources */,
 				4D74238628D6F8CD0041D860 /* MockData.swift in Sources */,
-				4D74238D28D6F9870041D860 /* APODManager.swift in Sources */,
 				4D74238B28D6F97D0041D860 /* NASAURLBuilder.swift in Sources */,
 				4D74238A28D6F8E50041D860 /* APODModel.swift in Sources */,
 				4D74238E28D6F99F0041D860 /* WidgetBundle.swift in Sources */,

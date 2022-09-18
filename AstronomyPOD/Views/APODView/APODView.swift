@@ -8,19 +8,14 @@
 import SwiftUI
 
 struct APODView: View {
-	@StateObject var viewModel: ViewModel
-
-	init(apodManager: APODManager) {
-		let viewModel = ViewModel(apodManager: apodManager)
-		_viewModel = StateObject(wrappedValue: viewModel)
-	}
+	@StateObject var viewModel = ViewModel()
 
     var body: some View {
 		NavigationView {
 			NavigationLink {
-				InfoView(apod: viewModel.apod)
+				InfoView(apod: viewModel.unwrappedAPOD)
 			} label: {
-				AstronomyImageView(apod: viewModel.apod)
+				AstronomyImageView(apod: viewModel.unwrappedAPOD)
 			}
 		}
 		.overlay {
@@ -45,7 +40,6 @@ struct APODView: View {
 
 struct APODView_Previews: PreviewProvider {
     static var previews: some View {
-		let apodManager = APODManager()
-        APODView(apodManager: apodManager)
+        APODView()
     }
 }
