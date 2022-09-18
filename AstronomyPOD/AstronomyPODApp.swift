@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct AstronomyPODApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	@StateObject var apodManager: APODManager
+
+	init() {
+		let apodManager = APODManager()
+		_apodManager = StateObject(wrappedValue: apodManager)
+	}
+
+	var body: some Scene {
+		WindowGroup {
+			APODView(apodManager: apodManager)
+				.environmentObject(apodManager)
+		}
+	}
 }

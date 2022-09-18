@@ -8,17 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		4D74233328D6E4A80041D860 /* AstronomyPODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74233228D6E4A80041D860 /* AstronomyPODApp.swift */; };
-		4D74233528D6E4A80041D860 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74233428D6E4A80041D860 /* ContentView.swift */; };
 		4D74233728D6E4A90041D860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D74233628D6E4A90041D860 /* Assets.xcassets */; };
 		4D74233A28D6E4A90041D860 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D74233928D6E4A90041D860 /* Preview Assets.xcassets */; };
+		4D74234328D6E50A0041D860 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234228D6E50A0041D860 /* Constants.swift */; };
+		4D74234628D6E5750041D860 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234528D6E5750041D860 /* Date+Ext.swift */; };
+		4D74234828D6E5910041D860 /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234728D6E5910041D860 /* DateFormatter+Ext.swift */; };
+		4D74234A28D6E5A50041D860 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234928D6E5A50041D860 /* MockData.swift */; };
+		4D74234D28D6E5EC0041D860 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234C28D6E5EC0041D860 /* APIService.swift */; };
+		4D74234F28D6E6150041D860 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234E28D6E6150041D860 /* ImageCache.swift */; };
+		4D74235128D6E62F0041D860 /* NASAURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */; };
+		4D74235428D6E6560041D860 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235328D6E6560041D860 /* APODModel.swift */; };
+		4D74235828D6E6BA0041D860 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235728D6E6BA0041D860 /* InfoView.swift */; };
+		4D74235B28D6E7020041D860 /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235A28D6E7020041D860 /* APODViewModel.swift */; };
+		4D74235D28D6E7090041D860 /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235C28D6E7090041D860 /* APODView.swift */; };
+		4D74236028D6E74B0041D860 /* APODManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235F28D6E74B0041D860 /* APODManager.swift */; };
+		4D74236328D6F4560041D860 /* AstronomyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74236228D6F4560041D860 /* AstronomyImageView.swift */; };
+		4D74236528D6F4630041D860 /* AstronomyImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74236428D6F4630041D860 /* AstronomyImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D74232F28D6E4A80041D860 /* AstronomyPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronomyPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D74233228D6E4A80041D860 /* AstronomyPODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPODApp.swift; sourceTree = "<group>"; };
-		4D74233428D6E4A80041D860 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D74233628D6E4A90041D860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D74233928D6E4A90041D860 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D74234228D6E50A0041D860 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D74234528D6E5750041D860 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		4D74234728D6E5910041D860 /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
+		4D74234928D6E5A50041D860 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		4D74234C28D6E5EC0041D860 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4D74234E28D6E6150041D860 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAURLBuilder.swift; sourceTree = "<group>"; };
+		4D74235328D6E6560041D860 /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
+		4D74235728D6E6BA0041D860 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		4D74235A28D6E7020041D860 /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		4D74235C28D6E7090041D860 /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
+		4D74235F28D6E74B0041D860 /* APODManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODManager.swift; sourceTree = "<group>"; };
+		4D74236228D6F4560041D860 /* AstronomyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyImageView.swift; sourceTree = "<group>"; };
+		4D74236428D6F4630041D860 /* AstronomyImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +77,14 @@
 		4D74233128D6E4A80041D860 /* AstronomyPOD */ = {
 			isa = PBXGroup;
 			children = (
+				4D74234028D6E4DF0041D860 /* Utilitites */,
+				4D74234128D6E4EB0041D860 /* MockData */,
+				4D74234428D6E5620041D860 /* Extensions */,
+				4D74234B28D6E5D10041D860 /* Services */,
+				4D74235E28D6E7370041D860 /* Managers */,
+				4D74235228D6E6460041D860 /* Model */,
+				4D74235528D6E6960041D860 /* Views */,
 				4D74233228D6E4A80041D860 /* AstronomyPODApp.swift */,
-				4D74233428D6E4A80041D860 /* ContentView.swift */,
 				4D74233628D6E4A90041D860 /* Assets.xcassets */,
 				4D74233828D6E4A90041D860 /* Preview Content */,
 			);
@@ -65,6 +97,93 @@
 				4D74233928D6E4A90041D860 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D74234028D6E4DF0041D860 /* Utilitites */ = {
+			isa = PBXGroup;
+			children = (
+				4D74234228D6E50A0041D860 /* Constants.swift */,
+			);
+			path = Utilitites;
+			sourceTree = "<group>";
+		};
+		4D74234128D6E4EB0041D860 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				4D74234928D6E5A50041D860 /* MockData.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		4D74234428D6E5620041D860 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D74234528D6E5750041D860 /* Date+Ext.swift */,
+				4D74234728D6E5910041D860 /* DateFormatter+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D74234B28D6E5D10041D860 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4D74234C28D6E5EC0041D860 /* APIService.swift */,
+				4D74234E28D6E6150041D860 /* ImageCache.swift */,
+				4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4D74235228D6E6460041D860 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D74235328D6E6560041D860 /* APODModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D74235528D6E6960041D860 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D74235928D6E6E50041D860 /* APODView */,
+				4D74235628D6E6A10041D860 /* InfoView */,
+				4D74236128D6E8DA0041D860 /* AstronomyImageView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D74235628D6E6A10041D860 /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				4D74235728D6E6BA0041D860 /* InfoView.swift */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		4D74235928D6E6E50041D860 /* APODView */ = {
+			isa = PBXGroup;
+			children = (
+				4D74235A28D6E7020041D860 /* APODViewModel.swift */,
+				4D74235C28D6E7090041D860 /* APODView.swift */,
+			);
+			path = APODView;
+			sourceTree = "<group>";
+		};
+		4D74235E28D6E7370041D860 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4D74235F28D6E74B0041D860 /* APODManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4D74236128D6E8DA0041D860 /* AstronomyImageView */ = {
+			isa = PBXGroup;
+			children = (
+				4D74236428D6F4630041D860 /* AstronomyImageViewModel.swift */,
+				4D74236228D6F4560041D860 /* AstronomyImageView.swift */,
+			);
+			path = AstronomyImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +256,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D74233528D6E4A80041D860 /* ContentView.swift in Sources */,
+				4D74235128D6E62F0041D860 /* NASAURLBuilder.swift in Sources */,
+				4D74235828D6E6BA0041D860 /* InfoView.swift in Sources */,
+				4D74235B28D6E7020041D860 /* APODViewModel.swift in Sources */,
+				4D74236528D6F4630041D860 /* AstronomyImageViewModel.swift in Sources */,
+				4D74234D28D6E5EC0041D860 /* APIService.swift in Sources */,
+				4D74236328D6F4560041D860 /* AstronomyImageView.swift in Sources */,
+				4D74235D28D6E7090041D860 /* APODView.swift in Sources */,
+				4D74235428D6E6560041D860 /* APODModel.swift in Sources */,
+				4D74234F28D6E6150041D860 /* ImageCache.swift in Sources */,
+				4D74234A28D6E5A50041D860 /* MockData.swift in Sources */,
+				4D74234828D6E5910041D860 /* DateFormatter+Ext.swift in Sources */,
 				4D74233328D6E4A80041D860 /* AstronomyPODApp.swift in Sources */,
+				4D74234328D6E50A0041D860 /* Constants.swift in Sources */,
+				4D74234628D6E5750041D860 /* Date+Ext.swift in Sources */,
+				4D74236028D6E74B0041D860 /* APODManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
