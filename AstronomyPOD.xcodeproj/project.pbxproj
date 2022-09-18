@@ -24,7 +24,47 @@
 		4D74236028D6E74B0041D860 /* APODManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235F28D6E74B0041D860 /* APODManager.swift */; };
 		4D74236328D6F4560041D860 /* AstronomyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74236228D6F4560041D860 /* AstronomyImageView.swift */; };
 		4D74236528D6F4630041D860 /* AstronomyImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74236428D6F4630041D860 /* AstronomyImageViewModel.swift */; };
+		4D74236D28D6F7550041D860 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D74236C28D6F7550041D860 /* WidgetKit.framework */; };
+		4D74236F28D6F7550041D860 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D74236E28D6F7550041D860 /* SwiftUI.framework */; };
+		4D74237428D6F7570041D860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D74237328D6F7570041D860 /* Assets.xcassets */; };
+		4D74237828D6F7570041D860 /* AstronomyPODWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D74236A28D6F7550041D860 /* AstronomyPODWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D74238528D6F8CA0041D860 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234228D6E50A0041D860 /* Constants.swift */; };
+		4D74238628D6F8CD0041D860 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234928D6E5A50041D860 /* MockData.swift */; };
+		4D74238728D6F8D00041D860 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234528D6E5750041D860 /* Date+Ext.swift */; };
+		4D74238828D6F8D20041D860 /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234728D6E5910041D860 /* DateFormatter+Ext.swift */; };
+		4D74238928D6F8D50041D860 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234C28D6E5EC0041D860 /* APIService.swift */; };
+		4D74238A28D6F8E50041D860 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235328D6E6560041D860 /* APODModel.swift */; };
+		4D74238B28D6F97D0041D860 /* NASAURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */; };
+		4D74238C28D6F9820041D860 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234E28D6E6150041D860 /* ImageCache.swift */; };
+		4D74238D28D6F9870041D860 /* APODManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235F28D6E74B0041D860 /* APODManager.swift */; };
+		4D74238E28D6F99F0041D860 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74237F28D6F7B50041D860 /* WidgetBundle.swift */; };
+		4D74238F28D6F9A30041D860 /* SimpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74238128D6F7BD0041D860 /* SimpleWidget.swift */; };
+		4D74239028D6F9A60041D860 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74238328D6F7C60041D860 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D74237628D6F7570041D860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D74232728D6E4A80041D860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D74236928D6F7550041D860;
+			remoteInfo = AstronomyPODWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D74237C28D6F7570041D860 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4D74237828D6F7570041D860 /* AstronomyPODWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D74232F28D6E4A80041D860 /* AstronomyPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronomyPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +85,16 @@
 		4D74235F28D6E74B0041D860 /* APODManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODManager.swift; sourceTree = "<group>"; };
 		4D74236228D6F4560041D860 /* AstronomyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyImageView.swift; sourceTree = "<group>"; };
 		4D74236428D6F4630041D860 /* AstronomyImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyImageViewModel.swift; sourceTree = "<group>"; };
+		4D74236A28D6F7550041D860 /* AstronomyPODWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AstronomyPODWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D74236C28D6F7550041D860 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4D74236E28D6F7550041D860 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4D74237328D6F7570041D860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D74237528D6F7570041D860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D74237D28D6F76E0041D860 /* AstronomyPOD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AstronomyPOD.entitlements; sourceTree = "<group>"; };
+		4D74237E28D6F78F0041D860 /* AstronomyPODWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AstronomyPODWidgetExtension.entitlements; sourceTree = "<group>"; };
+		4D74237F28D6F7B50041D860 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
+		4D74238128D6F7BD0041D860 /* SimpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidget.swift; sourceTree = "<group>"; };
+		4D74238328D6F7C60041D860 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +105,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D74236728D6F7550041D860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D74236F28D6F7550041D860 /* SwiftUI.framework in Frameworks */,
+				4D74236D28D6F7550041D860 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4D74232628D6E4A80041D860 = {
 			isa = PBXGroup;
 			children = (
+				4D74237E28D6F78F0041D860 /* AstronomyPODWidgetExtension.entitlements */,
 				4D74233128D6E4A80041D860 /* AstronomyPOD */,
+				4D74237028D6F7550041D860 /* AstronomyPODWidget */,
+				4D74236B28D6F7550041D860 /* Frameworks */,
 				4D74233028D6E4A80041D860 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				4D74232F28D6E4A80041D860 /* AstronomyPOD.app */,
+				4D74236A28D6F7550041D860 /* AstronomyPODWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +140,7 @@
 		4D74233128D6E4A80041D860 /* AstronomyPOD */ = {
 			isa = PBXGroup;
 			children = (
+				4D74237D28D6F76E0041D860 /* AstronomyPOD.entitlements */,
 				4D74234028D6E4DF0041D860 /* Utilitites */,
 				4D74234128D6E4EB0041D860 /* MockData */,
 				4D74234428D6E5620041D860 /* Extensions */,
@@ -186,6 +250,27 @@
 			path = AstronomyImageView;
 			sourceTree = "<group>";
 		};
+		4D74236B28D6F7550041D860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D74236C28D6F7550041D860 /* WidgetKit.framework */,
+				4D74236E28D6F7550041D860 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D74237028D6F7550041D860 /* AstronomyPODWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4D74237F28D6F7B50041D860 /* WidgetBundle.swift */,
+				4D74238128D6F7BD0041D860 /* SimpleWidget.swift */,
+				4D74238328D6F7C60041D860 /* DataProvider.swift */,
+				4D74237328D6F7570041D860 /* Assets.xcassets */,
+				4D74237528D6F7570041D860 /* Info.plist */,
+			);
+			path = AstronomyPODWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,15 +281,34 @@
 				4D74232B28D6E4A80041D860 /* Sources */,
 				4D74232C28D6E4A80041D860 /* Frameworks */,
 				4D74232D28D6E4A80041D860 /* Resources */,
+				4D74237C28D6F7570041D860 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4D74237728D6F7570041D860 /* PBXTargetDependency */,
 			);
 			name = AstronomyPOD;
 			productName = AstronomyPOD;
 			productReference = 4D74232F28D6E4A80041D860 /* AstronomyPOD.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4D74236928D6F7550041D860 /* AstronomyPODWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D74237928D6F7570041D860 /* Build configuration list for PBXNativeTarget "AstronomyPODWidgetExtension" */;
+			buildPhases = (
+				4D74236628D6F7550041D860 /* Sources */,
+				4D74236728D6F7550041D860 /* Frameworks */,
+				4D74236828D6F7550041D860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstronomyPODWidgetExtension;
+			productName = AstronomyPODWidgetExtension;
+			productReference = 4D74236A28D6F7550041D860 /* AstronomyPODWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -217,6 +321,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					4D74232E28D6E4A80041D860 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					4D74236928D6F7550041D860 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -235,6 +342,7 @@
 			projectRoot = "";
 			targets = (
 				4D74232E28D6E4A80041D860 /* AstronomyPOD */,
+				4D74236928D6F7550041D860 /* AstronomyPODWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +354,14 @@
 			files = (
 				4D74233A28D6E4A90041D860 /* Preview Assets.xcassets in Resources */,
 				4D74233728D6E4A90041D860 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D74236828D6F7550041D860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D74237428D6F7570041D860 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +390,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D74236628D6F7550041D860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D74238F28D6F9A30041D860 /* SimpleWidget.swift in Sources */,
+				4D74238828D6F8D20041D860 /* DateFormatter+Ext.swift in Sources */,
+				4D74238928D6F8D50041D860 /* APIService.swift in Sources */,
+				4D74238C28D6F9820041D860 /* ImageCache.swift in Sources */,
+				4D74238728D6F8D00041D860 /* Date+Ext.swift in Sources */,
+				4D74238528D6F8CA0041D860 /* Constants.swift in Sources */,
+				4D74239028D6F9A60041D860 /* DataProvider.swift in Sources */,
+				4D74238628D6F8CD0041D860 /* MockData.swift in Sources */,
+				4D74238D28D6F9870041D860 /* APODManager.swift in Sources */,
+				4D74238B28D6F97D0041D860 /* NASAURLBuilder.swift in Sources */,
+				4D74238A28D6F8E50041D860 /* APODModel.swift in Sources */,
+				4D74238E28D6F99F0041D860 /* WidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D74237728D6F7570041D860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D74236928D6F7550041D860 /* AstronomyPODWidgetExtension */;
+			targetProxy = 4D74237628D6F7570041D860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4D74233B28D6E4A90041D860 /* Debug */ = {
@@ -394,8 +537,10 @@
 		4D74233E28D6E4A90041D860 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AstronomyPOD/AstronomyPOD.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AstronomyPOD/Preview Content\"";
@@ -423,8 +568,10 @@
 		4D74233F28D6E4A90041D860 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AstronomyPOD/AstronomyPOD.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AstronomyPOD/Preview Content\"";
@@ -449,6 +596,62 @@
 			};
 			name = Release;
 		};
+		4D74237A28D6F7570041D860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AstronomyPODWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FH6DPMUTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstronomyPODWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AstronomyPODWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chontorres.AstronomyPOD.AstronomyPODWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D74237B28D6F7570041D860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AstronomyPODWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FH6DPMUTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstronomyPODWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AstronomyPODWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chontorres.AstronomyPOD.AstronomyPODWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -466,6 +669,15 @@
 			buildConfigurations = (
 				4D74233E28D6E4A90041D860 /* Debug */,
 				4D74233F28D6E4A90041D860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D74237928D6F7570041D860 /* Build configuration list for PBXNativeTarget "AstronomyPODWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D74237A28D6F7570041D860 /* Debug */,
+				4D74237B28D6F7570041D860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
