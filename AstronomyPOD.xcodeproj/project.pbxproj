@@ -15,7 +15,6 @@
 		4D74234828D6E5910041D860 /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234728D6E5910041D860 /* DateFormatter+Ext.swift */; };
 		4D74234A28D6E5A50041D860 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234928D6E5A50041D860 /* MockData.swift */; };
 		4D74234D28D6E5EC0041D860 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234C28D6E5EC0041D860 /* APIService.swift */; };
-		4D74234F28D6E6150041D860 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234E28D6E6150041D860 /* ImageCache.swift */; };
 		4D74235128D6E62F0041D860 /* NASAURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */; };
 		4D74235428D6E6560041D860 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235328D6E6560041D860 /* APODModel.swift */; };
 		4D74235828D6E6BA0041D860 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235728D6E6BA0041D860 /* InfoView.swift */; };
@@ -33,7 +32,6 @@
 		4D74238928D6F8D50041D860 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234C28D6E5EC0041D860 /* APIService.swift */; };
 		4D74238A28D6F8E50041D860 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235328D6E6560041D860 /* APODModel.swift */; };
 		4D74238B28D6F97D0041D860 /* NASAURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */; };
-		4D74238C28D6F9820041D860 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74234E28D6E6150041D860 /* ImageCache.swift */; };
 		4D74238E28D6F99F0041D860 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74237F28D6F7B50041D860 /* WidgetBundle.swift */; };
 		4D74238F28D6F9A30041D860 /* SimpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74238128D6F7BD0041D860 /* SimpleWidget.swift */; };
 		4D74239028D6F9A60041D860 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74238328D6F7C60041D860 /* DataProvider.swift */; };
@@ -73,7 +71,6 @@
 		4D74234728D6E5910041D860 /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
 		4D74234928D6E5A50041D860 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		4D74234C28D6E5EC0041D860 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		4D74234E28D6E6150041D860 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAURLBuilder.swift; sourceTree = "<group>"; };
 		4D74235328D6E6560041D860 /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
 		4D74235728D6E6BA0041D860 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -186,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				4D74234C28D6E5EC0041D860 /* APIService.swift */,
-				4D74234E28D6E6150041D860 /* ImageCache.swift */,
 				4D74235028D6E62F0041D860 /* NASAURLBuilder.swift */,
 			);
 			path = Services;
@@ -364,7 +360,6 @@
 				4D74236328D6F4560041D860 /* AstronomyImageView.swift in Sources */,
 				4D74235D28D6E7090041D860 /* APODView.swift in Sources */,
 				4D74235428D6E6560041D860 /* APODModel.swift in Sources */,
-				4D74234F28D6E6150041D860 /* ImageCache.swift in Sources */,
 				4D74234A28D6E5A50041D860 /* MockData.swift in Sources */,
 				4D74234828D6E5910041D860 /* DateFormatter+Ext.swift in Sources */,
 				4D74233328D6E4A80041D860 /* AstronomyPODApp.swift in Sources */,
@@ -380,7 +375,6 @@
 				4D74238F28D6F9A30041D860 /* SimpleWidget.swift in Sources */,
 				4D74238828D6F8D20041D860 /* DateFormatter+Ext.swift in Sources */,
 				4D74238928D6F8D50041D860 /* APIService.swift in Sources */,
-				4D74238C28D6F9820041D860 /* ImageCache.swift in Sources */,
 				4D74238728D6F8D00041D860 /* Date+Ext.swift in Sources */,
 				4D74238528D6F8CA0041D860 /* Constants.swift in Sources */,
 				4D74239028D6F9A60041D860 /* DataProvider.swift in Sources */,
