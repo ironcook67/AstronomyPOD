@@ -22,7 +22,7 @@ struct NASAURLBuilder {
 
 	// URL String for specific date
 	static func urlString(date: Date) -> String {
-		let dateString = DateFormatter.yyyyMMdd.string(from: date)
+		let dateString = DateFormatter.NASADate.string(from: date)
 		return Self.prefix + "&date\(dateString)"
 	}
 
@@ -32,8 +32,8 @@ struct NASAURLBuilder {
 	}
 
 	static func urlString(start: Date, end: Date) -> String {
-		let startDate = DateFormatter.yyyyMMdd.string(from: start)
-		let endDate = DateFormatter.yyyyMMdd.string(from: end)
+		let startDate = DateFormatter.NASADate.string(from: start)
+		let endDate = DateFormatter.NASADate.string(from: end)
 		return Self.urlString(start: startDate, end: endDate)
 	}
 }

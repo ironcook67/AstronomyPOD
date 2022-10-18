@@ -21,7 +21,8 @@ struct Provider: TimelineProvider {
 
 	func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
 		Task {
-			// Get the current image
+			// Get the current image, in UTC.
+			
 			let nextUpdate = Date.startOfTomorrow
 			let apiService = APIService(urlString: NASAURLBuilder.urlString())
 
