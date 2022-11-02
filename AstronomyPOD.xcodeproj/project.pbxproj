@@ -38,6 +38,7 @@
 		4D93328928F9DE8500A1E4D6 /* sample_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D93328828F9DE8500A1E4D6 /* sample_data.json */; };
 		4DCE7FEF28FE63B200AC4127 /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE7FEE28FE63B200AC4127 /* Calendar+Ext.swift */; };
 		4DF14B192911BD32003E5225 /* APODStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF14B182911BD32003E5225 /* APODStore.swift */; };
+		4DF14B1A29120355003E5225 /* APODStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF14B182911BD32003E5225 /* APODStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,8 +147,6 @@
 				4D74234428D6E5620041D860 /* Extensions */,
 				4D74234B28D6E5D10041D860 /* Services */,
 				4D74235228D6E6460041D860 /* Model */,
-				4D93326A28F9449700A1E4D6 /* Managers */,
-				4D93326628F943A300A1E4D6 /* Cache */,
 				4D74235528D6E6960041D860 /* Views */,
 				4D74233228D6E4A80041D860 /* AstronomyPODApp.swift */,
 				4D93328828F9DE8500A1E4D6 /* sample_data.json */,
@@ -263,20 +262,6 @@
 				4D74237528D6F7570041D860 /* Info.plist */,
 			);
 			path = AstronomyPODWidget;
-			sourceTree = "<group>";
-		};
-		4D93326628F943A300A1E4D6 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cache;
-			sourceTree = "<group>";
-		};
-		4D93326A28F9449700A1E4D6 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +395,7 @@
 				4D74239028D6F9A60041D860 /* DataProvider.swift in Sources */,
 				4D74238628D6F8CD0041D860 /* MockData.swift in Sources */,
 				4D74238B28D6F97D0041D860 /* NASAURLBuilder.swift in Sources */,
+				4DF14B1A29120355003E5225 /* APODStore.swift in Sources */,
 				4D74238A28D6F8E50041D860 /* APODModel.swift in Sources */,
 				4D74238E28D6F99F0041D860 /* WidgetBundle.swift in Sources */,
 			);

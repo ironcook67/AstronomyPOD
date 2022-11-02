@@ -9,7 +9,7 @@ import Foundation
 
 struct NASAURLBuilder {
 	static let DEMO_KEY = "DEMO_KEY"
-	static let API_KEY = "VP6e3MHCihUzVpKioZFfKe3wHoJjhYeandyKMr0m"
+	static let API_KEY = DEMO_KEY
 
 	static var prefix: String {
 		return "https://api.nasa.gov/planetary/apod?api_key=\(Self.API_KEY)"

@@ -24,13 +24,8 @@ struct Provider: TimelineProvider {
 			// Get the current image, in UTC.
 			
 			let nextUpdate = Date.startOfTomorrow
-			let apiService = APIService(urlString: NASAURLBuilder.urlString())
-
 			do {
-				var apod: APOD = try await apiService.getJSON()
-				let imageManager = APIService(urlString: apod.url)
-				let imageData = try await imageManager.downloadImageData()
-				apod.imageData = imageData
+				let apod = try await APODStore.shared.getAPOD()
 
 				// Create entry and timeline
 				let entry = PictureEntry(date: .now, apod: apod)

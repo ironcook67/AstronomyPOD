@@ -27,7 +27,6 @@ class APODStore: ObservableObject {
 		}
 
 		// Check saved file
-		print("getAPOD", apodStoreURL)
 		if FileManager.default.fileExists(atPath: apodStoreURL.path) {
 			do {
 				let data = try Data(contentsOf: apodStoreURL)
@@ -38,15 +37,12 @@ class APODStore: ObservableObject {
 					return newAPOD
 				}
 			} catch {
-				print("Error reading in saved APOD. \(error)")
+				print("❌ Error reading in saved APOD. \(error)")
 			}
-		} else {
-			print("getAPOD", "Saved file not found", apodStoreURL.path)
 		}
 
 		// Make the network call and save a new file.
 		do {
-			print("NetworkCall", NASAURLBuilder.urlString())
 			// Get the APOD
 			let apiService = APIService(urlString: NASAURLBuilder.urlString())
 			var newAPOD: APOD = try await apiService.getJSON()
@@ -73,9 +69,8 @@ class APODStore: ObservableObject {
 			let encoder = JSONEncoder()
 			let data = try encoder.encode(apod)
 			try data.write(to: apodStoreURL, options: [.atomic])
-			print("Saved the APOD.")
 		} catch {
-			print("Error encoding APOD \(error.localizedDescription)")
+			print("❌ Error encoding APOD \(error)")
 		}
 	}
 }
