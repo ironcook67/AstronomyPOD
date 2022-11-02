@@ -13,6 +13,7 @@ extension APODView {
 		@Published var isLoading = false
 		@Published var showAlert = false
 		@Published var errorMessage: String?
+		private var apodStore = APODStore.shared
 
 		var unwrappedAPOD: APOD {
 			if apod == nil {
@@ -23,7 +24,7 @@ extension APODView {
 		}
 
 		@MainActor
-		func fetchAPODs() async {
+		func fetchAPOD() async {
 			isLoading = true
 
 			defer {
@@ -31,15 +32,10 @@ extension APODView {
 			}
 
 			do {
-				let apiService = APIService(urlString: NASAURLBuilder.urlString())
-				apod = try await apiService.getJSON()
+				apod = try await apodStore.getAPOD()
 				if apod == nil {
 					throw APIError.corruptData
 				}
-
-				let imageManager = APIService(urlString: apod!.url)
-				let imageData = try await imageManager.downloadImageData()
-				apod!.imageData = imageData
 			} catch {
 				showAlert = true
 				errorMessage = error.localizedDescription

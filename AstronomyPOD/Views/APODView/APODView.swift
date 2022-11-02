@@ -15,7 +15,11 @@ struct APODView: View {
 			NavigationLink {
 				InfoView(apod: viewModel.unwrappedAPOD)
 			} label: {
-				AstronomyImageView(apod: viewModel.unwrappedAPOD)
+				if viewModel.unwrappedAPOD.imageData != nil {
+					AstronomyImageView(apod: viewModel.unwrappedAPOD)
+				} else {
+					ProgressView()
+				}
 			}
 		}
 		.overlay {
@@ -33,7 +37,7 @@ struct APODView: View {
 		.navigationTitle("Astro Pics")
 		.listStyle(.plain)
 		.task {
-			await viewModel.fetchAPODs()
+			await viewModel.fetchAPOD()
 		}
 	}
 }

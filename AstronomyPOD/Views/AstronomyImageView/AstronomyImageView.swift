@@ -14,6 +14,7 @@ struct AstronomyImageView: View {
 		Image(uiImage: UIImage(data: apod.imageData ?? Data()) ?? PlaceholderImage.square)
 			.resizable()
 			.scaledToFill()
+			.ignoresSafeArea()
 	}
 }
 

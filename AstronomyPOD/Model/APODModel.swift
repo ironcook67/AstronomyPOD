@@ -5,9 +5,9 @@
 //  Created by Chon Torres on 9/17/22.
 //
 
-import Foundation
+import UIKit
 
-struct APOD: Decodable, Comparable, Hashable, Identifiable {
+struct APOD: Hashable {
 	let date: String
 	let explanation: String
 	let title: String
@@ -20,22 +20,31 @@ struct APOD: Decodable, Comparable, Hashable, Identifiable {
 	var imageData: Data?
 	var path: URL?
 
-	var id: String {
-		self.date
-	}
-
-	static func < (lhs: APOD, rhs: APOD) -> Bool {
-		lhs.date > rhs.date
-	}
-
 	var isVideo: Bool {
-		return mediaType == "video"
+		mediaType == "video"
 	}
+
+	var isCurrent: Bool {
+		let dateString = DateFormatter.NASADateLocal.string(from: Date.now)
+		return self.date == dateString
+	}
+}
+
+extension APOD: Identifiable {
+    var id: String {
+        self.date
+    }
+}
+
+extension APOD: Comparable {
+    static func < (lhs: APOD, rhs: APOD) -> Bool {
+        lhs.date > rhs.date
+    }
 }
 
 // Some of the APOD entries might have a hdurl or copyright field.
 // Make a custom decoder. 
-extension APOD {
+extension APOD: Decodable {
 	enum CodingKeys: String, CodingKey {
 		case date
 		case explanation
@@ -110,8 +119,8 @@ extension APOD: Encodable {
 		try container.encode(mediaType, forKey: CodingKeys.media_type)
 
 		var dynamicKeysContainer = encoder.container(keyedBy: EncodingKeys.self)
-		try dynamicKeysContainer.encode(hdurl, forKey: EncodingKeys.hdurl)
-		try dynamicKeysContainer.encode(copyright, forKey: EncodingKeys.copyright)
-		try dynamicKeysContainer.encode(imageData, forKey: EncodingKeys.imageData)
+		try dynamicKeysContainer.encodeIfPresent(hdurl, forKey: EncodingKeys.hdurl)
+		try dynamicKeysContainer.encodeIfPresent(copyright, forKey: EncodingKeys.copyright)
+		try dynamicKeysContainer.encodeIfPresent(imageData, forKey: EncodingKeys.imageData)
 	}
 }
